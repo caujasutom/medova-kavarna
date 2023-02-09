@@ -1,1 +1,36 @@
-<p>navbar works!</p>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a routerLink="">
+        <img src="assets/obrazky/logo.png" alt="Medová kavárna logo" />
+      </a>
+    </div>
+    <div class="list">
+      <a
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Domů</a
+      >
+      <a
+        routerLink="menu"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Menu</a
+      >
+      <a
+        routerLink="ubytovani"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Ubytování</a
+      >
+      <a
+        routerLink="fotogalerie"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Fotogalerie</a
+      >
+      <a (click)="scrollToContact()">Kontakt</a>
+    </div>
+  </nav>
+</header>

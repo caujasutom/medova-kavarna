@@ -1,0 +1,41 @@
+header {
+  nav.navbar {
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    z-index: 120;
+    img {
+      width: 150px;
+      cursor: pointer;
+      margin-left: 16%;
+    }
+    div.list {
+      position: sticky;
+      top: 0;
+      display: flex;
+      margin-right: 15%;
+      border-radius: 12px;
+      justify-content: center;
+      padding-block: 2.5%;
+      background: hsla(0, 0%, 40%, 0.5);
+      backdrop-filter: saturate(180%) blur(10px);
+      gap: 5%;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: 0.3s;
+        &.active {
+          color: #ffb800;
+        }
+        &:hover:not(a.active) {
+          color: #ffb800;
+        }
+      }
+    }
+  }
+}
