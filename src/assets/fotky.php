@@ -1,6 +1,6 @@
 <?php
     $directory = "fotky/kavarna";
-    $images = glob($directory . "/*.jpg");
+    $images = glob($directory . "/*.webp");
 
     $imageList = array();
     foreach ($images as $image) {

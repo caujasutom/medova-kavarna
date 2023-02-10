@@ -22,6 +22,7 @@ div.container {
     width: 65%;
     div.section {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 2vh;
       div {
@@ -31,6 +32,21 @@ div.container {
             height: 100%;
             object-fit: cover;
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.98px){
+  div.container {
+    div.heading {
+      width: 90%;
+    }
+    div.fotky {
+      width: 90% !important;
+      div.section {
+        div {
+          width: 45%;
         }
       }
     }
