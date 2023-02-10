@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    apiEndpoint: 'http://localhost:5555/'
+    apiEndpoint: 'http://localhost:5555/medova-kavarna/assets/'
   };

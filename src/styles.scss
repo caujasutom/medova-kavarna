@@ -1,8 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Hind", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffb800;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(43, 100%, 65%);
+}
+::-moz-selection {
+  background: #202123;
+  color: #fff
+}
+::selection {
+  background: #202123;
+  color: #fff
 }
 .color-main {
   color: #ffb800;
+}
+p {
+  margin-bottom: 0;
+}
+.hidden {
+  overflow: unset;
 }

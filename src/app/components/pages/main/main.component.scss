@@ -1,5 +1,6 @@
 div.container {
   div.content {
+    height: 100vh;
     &:nth-child(1) {
       display: flex;
       div.half {

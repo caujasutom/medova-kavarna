@@ -1,0 +1,32 @@
+<app-cenik *ngIf="cenik"></app-cenik>
+<div class="container" id="ubytovani">
+  <div class="heading">
+    <div
+      class="line"
+      uk-scrollspy="cls:uk-animation-slide-top-small; delay: 100"
+    ></div>
+    <h2 uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 150">
+      Ubytování
+    </h2>
+  </div>
+  <div class="content">
+    <div class="line"></div>
+    <div class="text" uk-scrollspy="target: > p; cls: uk-animation-slide-left-small; delay: 100">
+      <h3>Naše kavárna nabízí i ubytování</h3>
+      <p>
+        V naší kavárně se vám nabízí nejen chutný kávový zážitek, ale i pohodlné
+        a komfortní ubytování.
+      </p>
+      <p>
+        S našimi pohodlnými pokoji a vynikající kávou se můžete těšit na pobyt
+        plný komfortu a pohody. Přijďte si užít jedinečný zážitek spojující kávu
+        a ubytování v jednom a vstávejte každé ráno s úsměvem na tváři.
+      </p>
+      <button (click)="openCenik()" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 100">Zobrazit ceník</button>
+    </div>
+  </div>
+  <div class="content">
+    <h3 uk-scrollspy="cls:uk-animation-slide-left-small; delay: 100">Naše pokoje</h3>
+    <app-slider></app-slider>
+  </div>
+</div>

@@ -7,20 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  showNavbar = false;
-
-  constructor(private router: Router) {}
-
-  toggleNavbar() {
-    this.showNavbar = !this.showNavbar;
-  }  
-
-  scrollToContact() {
-    this.toggleNavbar()
-    this.router.navigate(['/']).then(() => {
-      setTimeout(() => {
-        document.querySelector('#kontakt')!.scrollIntoView({ behavior: 'smooth' });
-      }, 10);
-    });
+  scroll(id: string) {
+    const element = document.getElementById(id)!;
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 }
