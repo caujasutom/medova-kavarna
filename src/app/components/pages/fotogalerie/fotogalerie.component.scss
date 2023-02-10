@@ -37,7 +37,7 @@ div.container {
     }
   }
 }
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
   div.container {
     div.heading {
       width: 90%;
@@ -45,6 +45,8 @@ div.container {
     div.fotky {
       width: 90% !important;
       div.section {
+        justify-content: space-between !important;
+        row-gap: 4vh !important;
         div {
           width: 45%;
         }

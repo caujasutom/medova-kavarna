@@ -39,7 +39,7 @@ div.container {
         border: 0;
         outline: 0;
         padding: 2.5%;
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         &:hover {
           cursor: pointer;
           background-color: hsl(43, 100%, 60%);
@@ -51,6 +51,21 @@ div.container {
       gap: 0;
       h3 {
         margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  div.container {
+    div.heading {
+      width: 90%;
+    }
+    div.content {
+      width: 90% !important;
+      gap: 5vw !important;
+      div.text {
+        width: 100%;
       }
     }
   }

@@ -127,3 +127,41 @@ div.container {
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  div.container {
+    div.heading {
+      width: 90%;
+    }
+    div.content {
+      width: 90% !important;
+      gap: 5vw !important;
+      div.text {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        div.text {
+          div.info {
+            div.parent {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        gap: 0 !important;
+        div.map {
+          iframe.map {
+            border-radius: 20px;
+          }
+        }
+      }
+      &:nth-child(4) {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}

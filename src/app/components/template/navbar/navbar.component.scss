@@ -1,41 +1,68 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: all .4s ease-in-out;
+  &.active {
+    background: hsla(0, 0%, 14%, 0.5);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+  }
   nav.navbar {
-    position: fixed;
-    width: 100%;
-    height: 14vh;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    z-index: 120;
-    img {
-      width: 150px;
-      cursor: pointer;
-      margin-left: 16%;
+    display: flex;
+    gap: 2vw;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
     }
-    div.list {
-      position: sticky;
-      top: 0;
-      display: flex;
-      margin-right: 15%;
-      border-radius: 4px;
-      justify-content: center;
-      padding-block: 2.5%;
-      background: hsla(0, 0%, 40%, 0.5);
-      backdrop-filter: saturate(180%) blur(5px);
-      gap: 5%;
-      a {
+  }
+  div.logo {
+    span {
+      font-weight: bold;
+      font-size: clamp(1rem, 1.25rem, 1.5rem);
+      color: #fff;
+    }
+  }
+  div.menu-toggle {
+    display: none;
+    color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    &.active {
+      background: hsla(0, 0%, 14%, 0.9);
+    }
+    div.menu-toggle {
+      display: flex !important;
+      font-weight: bold;
+    }
+    nav.navbar {
+      &.navbar.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
         color: #fff;
-        text-decoration: none;
-        font-size: 1.1rem;
-        transition: 0.3s;
-        font-weight: bolder;
-        &.active {
-          color: #ffb800;
+        padding-block: 2rem;
+        background: hsla(0, 0%, 14%, 0.75);
+        a {
+          margin-left: 2rem;
+          padding: 1rem 0;
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 500;
         }
-        &:hover:not(a.active) {
-          color: #ffb800;
-        }
+      }
+      &:not(.show) {
+        display: none;
       }
     }
   }

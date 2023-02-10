@@ -19,3 +19,11 @@ div.container {
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  div.container {
+    div.heading {
+      width: 90% !important;
+    }
+  }
+}

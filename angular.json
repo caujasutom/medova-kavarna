@@ -27,7 +27,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets/.htaccess",
+              "src/.htaccess",
+              "src/robots.txt",
+              "src/sitemap.xml",
               "src/assets",
               "src/assets/fotky.php"
             ],

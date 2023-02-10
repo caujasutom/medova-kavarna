@@ -1,26 +1,21 @@
-<header itemscope itemtype="http://schema.org/WPHeader">
-  <nav class="navbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
-    <div class="logo" itemscope itemtype="http://schema.org/Brand">
-      <a (click)="scroll('main')" itemprop="url">
-        <img src="assets/fotky/logo.png" alt="Medová kavárna logo" itemprop="logo"/>
-      </a>
-    </div>
-    <div class="list" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <a (click)="scroll('main')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
-        <span itemprop="name">Domů</span>
-      </a>
-      <a (click)="scroll('fotogalerie')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
-        <span itemprop="name">Fotogalerie</span>
-      </a>
-      <a (click)="scroll('ubytovani')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
-        <span itemprop="name">Ubytování</span>
-      </a>
-      <a (click)="scroll('menu')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
-        <span itemprop="name">Menu</span>
-      </a>
-      <a (click)="scroll('kontakt')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
-        <span itemprop="name">Kontakt</span>
-      </a>
-    </div>
+<header temscope itemtype="http://schema.org/WPHeader">
+  <div class="logo"> <span (click)="scroll('main')">Medová kavárna</span></div>
+  <nav class="navbar" itemscope itemtype="http://schema.org/SiteNavigationElement" [ngClass]="{'show': showNavbar}" uk-scrollspy="cls: uk-animation-fade; repeat: true;">
+    <a (click)="scroll('main')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+      <span itemprop="name">Domů</span>
+    </a>
+    <a (click)="scroll('fotogalerie')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+      <span itemprop="name">Fotogalerie</span>
+    </a>
+    <a (click)="scroll('ubytovani')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+      <span itemprop="name">Ubytování</span>
+    </a>
+    <a (click)="scroll('menu')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+      <span itemprop="name">Menu</span>
+    </a>
+    <a (click)="scroll('kontakt')" itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+      <span itemprop="name">Kontakt</span>
+    </a>
   </nav>
+  <div class="menu-toggle" (click)="toggleNavbar()">&#9776;</div>
 </header>
