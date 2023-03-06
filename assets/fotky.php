@@ -1,5 +1,6 @@
 <?php
-    $directory = "fotky/kavarna";
+    $name = $_GET['name'];
+    $directory = "fotky/$name";
     $images = glob($directory . "/*.webp");
 
     $imageList = array();
